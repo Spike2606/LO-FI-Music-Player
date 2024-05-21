@@ -26,7 +26,7 @@ public class ControlButtons {
 
         quitButton = createButton("Icons/Quit.png", 320, 100, new Color(201, 178, 212), e -> System.exit(0));
 
-        nextButton = createButton("Icons/Next.png", 330, 200, new Color(201, 178, 212), e -> {
+        nextButton = createButton2("Icons/Next.png", 330, 200, new Color(201, 178, 212), e -> {
             int currentSong = MusicPlayer2.currentSong;
             if (currentSong < MusicPlayer2.songFiles.size() - 1) {
                 MusicPlayer2.currentSong++;
@@ -40,7 +40,9 @@ public class ControlButtons {
             timer.start();
         });
 
-        previousButton = createButton("Icons/Prev.png", 230, 200, new Color(201, 178, 212), e -> {
+        
+
+        previousButton = createButton2("Icons/Prev.png", 230, 200, new Color(201, 178, 212), e -> {
             int currentSong = MusicPlayer2.currentSong;
             if (currentSong > 0) {
                 MusicPlayer2.currentSong--;
@@ -53,7 +55,11 @@ public class ControlButtons {
             Timer timer = new Timer(100, e1 -> progressBar.updateProgressBar());
             timer.start();
         });
+        
     }
+
+
+    
 
     private JButton createButton(String iconPath, int x, int y, Color color, ActionListener actionListener) {
         JButton button = new JButton();
@@ -62,6 +68,18 @@ public class ControlButtons {
         button.setBounds(x, y, 80, 50);
         button.addActionListener(actionListener);
         button.setVisible(true);
+
+        return button;
+    }
+
+    private JButton createButton2(String iconPath, int x, int y, Color color, ActionListener actionListener) {
+        JButton button = new JButton();
+        button.setBackground(color);
+        button.setIcon(new ImageIcon(iconPath));
+        button.setBounds(x, y, 90, 50);
+        button.addActionListener(actionListener);
+        button.setVisible(true);
+
         return button;
     }
 
