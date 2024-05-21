@@ -1,1 +1,9 @@
-bin/
+# Ignore the bin folder
+/bin/
+
+# Other entries you might want to ignore
+*.class
+*.log
+*.tmp
+*.swp
+.DS_Store
