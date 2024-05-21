@@ -35,7 +35,7 @@ public class MusicPlayer2 {
             new File("Sounds/Mellow.wav"),
             new File("Sounds/Memories.wav"),
             new File("Sounds/Midnight.wav"),
-            new File("Sounds/Moments Notice.wav"),
+            new File("Sounds/A Moments Notice.wav"),
             new File("Sounds/Montana.wav"),
             new File("Sounds/Moody Blue.wav"),
             new File("Sounds/New York City.wav"),
