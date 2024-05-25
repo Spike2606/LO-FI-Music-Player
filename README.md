@@ -7,7 +7,6 @@ Welcome to my first project - Vintage Lo-Fi Music Player! This Java-based applic
 ## Instalation
 
 Please feel free using the app by forking the source code or directly downloading .exe version of the app (you must have the JDK installed on your PC).
-.exe download - 
 
 ## © Copyright
 
